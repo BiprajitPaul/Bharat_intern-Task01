@@ -1,0 +1,523 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    min-height: 100vh;
+
+
+    background: linear-gradient(90deg, rgb(5, 9, 18), rgba(24, 28, 33, 0.2)), url(/Bg.png);
+    background-size: cover;
+    background-position: center center;
+
+}
+
+nav {
+    width: 25%;
+    height: 100vh;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+}
+
+.logo {
+    font-size: 3em;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    letter-spacing: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.menu {
+    padding-top: 100px;
+}
+
+.menu a {
+    text-align: justify;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 10px 0;
+    margin: 20px auto;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    transition: 0.3s ease;
+}
+
+.menu i {
+    margin: 0 20px;
+}
+
+.socialIcons {
+
+    margin-top: 20%;
+}
+
+.socialIcons i {
+    transition: 0.3s ease;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 22px;
+    box-shadow: 2px 1px 3px grey;
+}
+
+.socialIcons i:nth-child(1):hover {
+    color: #0040ae;
+    /* border-radius: 50%; */
+}
+
+.socialIcons i:nth-child(2):hover {
+    color: #0a97f6;
+}
+
+.socialIcons i:nth-child(3):hover {
+    color: #fc6529;
+}
+
+.socialIcons i:nth-child(4):hover {
+    color: #1dfd04;
+}
+
+.socialIcons i:hover {
+    transform: translateY(-10px);
+}
+
+.menu a:first-child {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.menu a:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.ttl .text {
+    color: rgb(51, 113, 174);
+    font-size: 3rem;
+    position: relative;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.ttl h1 {
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+}
+
+.ttl {
+
+    padding: 0 40px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: 30vh;
+    /* background-color: #010718; */
+    background-color: #030f14f7;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.ttl .firstText {
+    color: rgb(255, 255, 255);
+}
+
+.ttl .secondText:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* background-color: #010718; */
+    background-color: #000000;
+    border-left: 2px solid rgb(51, 113, 174);
+    animation: animate 4s steps(12) infinite;
+    overflow: hidden;
+
+}
+
+@keyframes animate {
+
+    40%,
+    60% {
+        left: calc(100% + 4px);
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+.hireSection {
+
+    height: 90vh;
+
+    width: 100vw;
+
+}
+
+.hireSection .row {
+    margin-top: 150px;
+    width: 100%;
+    height: 80%;
+
+
+}
+
+.objective {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.objective button {
+    box-shadow: 2px 1px 3px grey;
+    background-color: rgb(51, 113, 174);
+    color: white;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    padding: 6px 10px;
+    width: 50%;
+    height: 60px;
+    border: none;
+    margin-top: 30px;
+}
+
+.objective img {
+    width: 50%;
+    border-radius: 12px;
+
+    box-shadow: 7px -7px 80px rgb(51, 113, 174);
+}
+
+.imgSection h2 {
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: rgb(51, 113, 174);
+}
+
+.imgSection {
+    border-left: 5px dashed rgb(51, 113, 174);
+
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+}
+
+.imgSection span {
+    font-size: 19px;
+    line-height: 26px;
+    font-weight: lighter;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.skillSection {
+
+    background: linear-gradient(rgb(5, 9, 18), rgba(24, 28, 33, 0.2)), url(/Skiils.jpg);
+    background-size: cover;
+    background-position: center;
+
+    width: 100vw;
+    height: 130vh;
+    padding-bottom: 20px;
+
+}
+
+.skillSection h1 {
+    color: white;
+    filter: brightness(1.8);
+}
+
+.showcase {
+
+    filter: brightness(1.8);
+    padding: 50px;
+    border: 3px dashed black;
+    backdrop-filter: brightness(0.3);
+    width: 90vw;
+    margin: 60px auto;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.22);
+
+    border-radius: 12px;
+}
+
+.skillSection .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skillsImg {
+    width: 90%;
+    border-radius: 20px;
+    box-shadow: 4px 3px 9px rgba(14, 3, 3, 0.534), 0 1px 2px rgb(0, 0, 0);
+}
+
+#HTML {
+    width: 60%;
+    height: 30px;
+    border-radius: 20px;
+    background-color: red;
+}
+
+h4 {
+    margin: 4px;
+}
+
+.showcase li {
+    list-style: none;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.bar {
+    background: #353b48;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.bar span {
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgba(51, 113, 174, 1)0%, rgb(129, 188, 248)100%);
+}
+
+.html {
+    width: 90%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 13px;
+    animation: html 5s;
+}
+
+.css {
+    width: 70%;
+    animation: css 5s;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 13px;
+}
+
+.js {
+    width: 70%;
+    animation: js 5s;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 13px;
+}
+
+.jQ {
+    width: 90%;
+    animation: jQ 5s;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 13px;
+}
+
+.bts {
+    width: 80%;
+    animation: bts 5s;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 13px;
+}
+
+.C_Laungage {
+    width: 40%;
+    animation: C_Laungage 3s;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 13px;
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes js {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes jQ {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes bts {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes C_Laungage {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 40%;
+    }
+}
+
+
+form {
+    width: 500px;
+    margin: auto;
+}
+
+input,
+textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.sendButton {
+    width: 100%;
+
+    background-color: #000;
+
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.ContactSec {
+    background: url(/contsctBG.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 80vh;
+}
+
+.ContactSec h1 {
+    color: white;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 4px;
+}
+
+.firstEmailPart {
+    color: #fff;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    padding: 20px 50px;
+    flex-direction: column;
+    text-align: justify;
+    height: 90%;
+    background-color: transparent
+}
+
+.firstEmailPart h2 {
+    font-size: 2.4rem;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+
+.firstEmailPart p {
+    border-bottom: 2px dashed rgb(228, 228, 228);
+    padding: 10px 0;
+    line-height: 25px;
+    font-size: 19px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.secondEmailPart {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    padding: 20px 50px;
+    flex-direction: column;
+    text-align: justify;
+    height: 90%;
+    background-color: transparent;
+}
+
+.secondEmailPart form {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    height: fit-content;
+    flex-direction: column;
+}
+
+.secondEmailPart form textarea {
+    height: 130px;
+}
+
+.name,
+.email {
+    height: 60px;
+}
+
+.wp-btn {
+    border: 2px solid rgb(50, 254, 50);
+}
+
+.wp-btn:hover {
+    background-color: rgb(68, 252, 68);
+    color: rgb(0, 0, 0);
+}
+
+.secondEmailPart form input,
+textarea {
+    padding: 10px 20px;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+}
+
+.secondEmailPart form input,
+textarea,
+button {
+    border-radius: 12px;
+}
